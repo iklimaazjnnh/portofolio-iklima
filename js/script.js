@@ -13,6 +13,15 @@ function opentab(tabname) {
     document.getElementById(tabname).classList.add("active-tab");
 }
 
+// Navbar toggle
+const mobileMenu = document.getElementById("mobile-menu");
+const navList = document.querySelector(".nav-list");
+
+mobileMenu.addEventListener("click", () => {
+    navList.classList.toggle("active");
+});
+
+
 // Skrip untuk mengelola formulir dan pesan
 const scriptURL = 'https://script.google.com/macros/s/AKfycbz6QZtFB4S-Y8Rg9LoCObStX7JosB9-WMk-WpdUj8NFukzS1M2j_O914tCueUjK4UsV/exec';
 const form = document.querySelector('.submit-to-google-sheet');
